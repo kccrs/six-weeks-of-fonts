@@ -99,12 +99,14 @@ nav li {
   background-color: #7ECEFD;
   height: 500px; }
 
+.about-title {
+  padding-top: 8vh; }
+
 h2 {
   font-family: "Cantata One", serif;
   font-size: 22px;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding-top: 30px;
   text-align: center; }
 
 .main-about {
@@ -446,11 +448,48 @@ b {
   font-size: 18px; }
 
 .week-three-copy {
-  border: 2px solid orange;
-  font-family: "Arvo", serif;
   font-size: 24px;
-  height: 60vh;
+  height: 75vh;
   margin-top: 20px;
-  width: 100vw; }
+  width: 100vw;
+  line-height: 1.5em;
+  position: absolute; }
+
+.week-three-copy span {
+  border: 2px solid teal;
+  display: block;
+  font-family: "Arvo", serif;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 70vw; }
+
+.right,
+.left {
+  line-height: 2em; }
+
+.right {
+  left: 20vh;
+  top: 15vh;
+  transform: rotateZ(90deg); }
+
+.left {
+  right: 20vh;
+  top: 22vh;
+  transform: rotateZ(270deg); }
+
+.inside {
+  top: 10vh; }
+
+.bottom {
+  top: 30vh; }
+
+.author {
+  top: 38vh;
+  font-size: 20px;
+  line-height: 1em; }
+
+.three .fonts {
+  margin-top: 80vh; }
 
 /*# sourceMappingURL=styles.css.map */

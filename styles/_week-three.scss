@@ -13,37 +13,72 @@
 }
 
 .week-three-copy {
-  border: 2px solid orange;
-  font-family: $font-arvo;
   font-size: 24px;
-  height: 60vh;
-  // line-height: 2em;
+  height: 75vh;
   margin-top: 20px;
-  // padding: 30px;
   width: 100vw;
+  line-height: 1.5em;
+  position: absolute;
+}
+
+.week-three-copy span {
+  border: 2px solid teal;
+  display: block;
+  font-family: $font-arvo;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 70vw;
+}
+
+.right,
+.left {
+  line-height: 2em;
+  // position: relative;
+  // margin-top: 20vh;
 }
 
 .right {
-
+  //  padding-left: 10vw;
+  left: 20vh;
+  top: 15vh;
+  transform: rotateZ(90deg);
 }
 
 .top {
-
-}
-
-.bottom {
-
+  // margin: auto;
+//   width: 100vw;
 }
 
 .left {
+  // margin-right: 75vh;
+  // margin-top: 10vh;
+  right: 20vh;
+  top: 22vh;
+  transform: rotateZ(270deg);
+}
+
+.inside {
+  top: 10vh;
+  // margin-top: 5vh;
+}
+
+.bottom {
+  top: 30vh;
+  // margin-top: 10px;
+  // margin-bottom: auto;
+}
+
+.author {
+  top: 38vh;
+  // font-family: $font-noto-sans;
+  font-size: 20px;
+  line-height: 1em;
 
 }
 
-
-
-
-.author {
-  // font-family: $font-noto-sans;
+.three .fonts {
+  margin-top: 80vh;
 }
 
 @media screen and (min-width: 480px) {
