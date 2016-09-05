@@ -1,0 +1,461 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+header {
+  background-color: #E8E6E3;
+  border-bottom: 2px solid #FF7F66;
+  margin-top: -5px; }
+
+h1 {
+  font-family: "Cantata One", serif;
+  font-size: 1.6em;
+  padding-top: 30px;
+  text-align: center; }
+
+h4 {
+  font-family: "Imprima", sans-serif;
+  line-height: 1.5em;
+  margin: 15px 0;
+  text-align: center; }
+
+nav {
+  height: 35px;
+  margin: 10px auto; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+nav a,
+nav a:visited {
+  color: #2185C5;
+  text-decoration: none; }
+  nav a:hover,
+  nav a:visited:hover {
+    color: #FF7F66; }
+
+nav li {
+  font-family: "Cantata One", serif;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  text-transform: lowercase; }
+
+.hidden {
+  display: none; }
+
+.main-content {
+  background-color: #7ECEFD;
+  height: 500px; }
+
+h2 {
+  font-family: "Cantata One", serif;
+  font-size: 22px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: center; }
+
+.main-about {
+  font-family: "Imprima", sans-serif;
+  font-size: 1.3em;
+  line-height: 2em;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center; }
+
+.week-title {
+  border-bottom: 2px solid #ff2a00;
+  padding-bottom: 10px;
+  width: 200px; }
+
+h3 {
+  font-family: "Cantata One", serif;
+  font-size: 14px;
+  padding-top: 5px;
+  text-align: center; }
+
+.week {
+  border: 2px solid black;
+  border-top: none;
+  height: 100vh;
+  padding-top: 20px; }
+
+.fonts {
+  display: flex;
+  font-family: "Cantata One", serif;
+  height: 30px;
+  justify-content: space-around;
+  line-height: 24px;
+  margin: auto;
+  margin-top: 90px;
+  vertical-align: text-bottom;
+  width: 80vw; }
+  .fonts a {
+    color: black;
+    text-decoration: none; }
+
+@media screen and (min-width: 480px) {
+  nav {
+    display: flex;
+    justify-content: center; }
+
+  .hidden {
+    display: inline-block; }
+
+  .main-content h2 {
+    padding-top: 50px; }
+
+  .main-about {
+    line-height: 2.5em; }
+
+  .fonts {
+    margin-top: 60px; } }
+@media screen and (min-width: 600px) {
+  .main-content {
+    height: 550px; } }
+@media screen and (min-width: 790px) {
+  h1 {
+    font-size: 2.8em; }
+
+  nav li {
+    margin: 0 10px; }
+
+  .main-about {
+    letter-spacing: 0.1em;
+    padding-top: 20px;
+    width: 70%; }
+
+  h2 {
+    height: 100px;
+    padding-top: 60px; }
+
+  .week-title {
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+
+  .week-date {
+    height: 20px;
+    margin-top: 5px; } }
+.one {
+  background-color: #555f68; }
+
+.fire {
+  animation: skew 1s infinite;
+  animation-direction: alternate;
+  color: #ff2a00;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  transform: skew(20deg); }
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg); }
+  100% {
+    transform: skewX(-20deg); } }
+.blue {
+  color: #7ECEFD;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  letter-spacing: .1em;
+  margin: 0 auto;
+  transform: skewY(20deg);
+  width: 15%; }
+
+.unna {
+  font-family: "Unna", serif; }
+
+.fonts .unna {
+  font-size: 20px; }
+
+.lato {
+  font-family: "Lato", sans-serif; }
+
+.week-one-copy {
+  font-size: 20px;
+  letter-spacing: .5em;
+  line-height: 2.2em;
+  margin: 10px auto;
+  width: 80%; }
+
+@media screen and (min-width: 480px) {
+  .week-one-copy {
+    font-size: 1.4em;
+    margin-top: 20px;
+    padding-left: 40px;
+    width: 85%; }
+
+  .one .fonts {
+    margin-top: 100px; } }
+@media screen and (min-width: 600px) {
+  .week-one-copy {
+    line-height: 3em; } }
+@media screen and (min-width: 790px) {
+  .week-one-copy {
+    font-size: 1.8em;
+    letter-spacing: 0.3em;
+    line-height: 2.5em;
+    width: 70%; }
+
+  .blue {
+    margin-top: 40px; } }
+@media screen and (min-width: 790px) {
+  .one .fonts {
+    margin-top: 60px; }
+
+  .two .week-title {
+    margin-top: 20px; }
+
+  .week-two-copy {
+    margin-top: 0;
+    padding-top: 0; }
+
+  .week-two-copy span {
+    font-size: 26px; }
+
+  b {
+    font-size: 40px;
+    font-style: italic; }
+
+  .two {
+    background-color: #e2b894;
+    background-image: radial-gradient(circle, #d0e3f2 30%, #FFF 40%, #e2b894); }
+
+  .could {
+    margin-bottom: 0; }
+
+  .animal,
+  .hate {
+    margin-bottom: 0;
+    margin-top: 0; }
+
+  .grumpy-steve-bear {
+    max-height: 300px; }
+
+  .week-two-copy .steve {
+    font-size: 20px; }
+
+  .two .fonts {
+    margin-top: 0; } }
+.two {
+  background-color: #e2b894;
+  background-image: radial-gradient(circle, #d0e3f2 20%, #FFF 25%, #e2b894); }
+
+.two .week-title {
+  border-bottom: 2px solid #94BEE2; }
+
+.week-two-copy {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%; }
+  .week-two-copy span {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    width: 100%; }
+
+b {
+  font-family: "Vollkorn", serif;
+  font-size: 30px;
+  margin: 0 3px; }
+
+.could {
+  margin-bottom: 10px; }
+
+.because {
+  margin-bottom: 20px;
+  text-align: right; }
+
+.animal {
+  text-align: right;
+  margin: 20px 0; }
+
+.hate {
+  font-size: 16px;
+  margin: 30px 0; }
+
+.steve {
+  text-align: center; }
+
+.two .fonts {
+  font-size: 14px;
+  margin-top: 30px; }
+
+.two .fonts li {
+  padding-left: 10px; }
+
+.fonts .vollkorn {
+  font-size: 15px; }
+
+.grumpy-steve-bear {
+  display: block;
+  margin: 0 auto;
+  max-height: 200px;
+  width: auto; }
+
+@media screen and (min-width: 480px) {
+  .two .week-title {
+    margin-bottom: 5px;
+    padding-top: 10px; }
+
+  .two .date {
+    height: 20px; }
+
+  .grumpy-steve-bear {
+    margin-top: 40px; }
+
+  .two .fonts {
+    justify-content: center;
+    margin-top: 50px; }
+
+  .two .fonts li {
+    padding: 0 10px 0 15px; }
+
+  .hate {
+    margin-top: 10px; } }
+@media screen and (min-width: 600px) {
+  .could {
+    padding-left: 60px; }
+
+  .hate {
+    padding-left: 40px; }
+
+  .because {
+    padding-right: 30px; }
+
+  .animal {
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-top: 20px; }
+
+  .two .fonts {
+    margin-top: 10px; } }
+@media screen and (min-width: 790px) {
+  .two h2 {
+    height: 60px; }
+
+  .because {
+    margin-bottom: 0; }
+
+  .grumpy-steve-bear {
+    margin-top: 0; }
+
+  .animal,
+  .hate {
+    margin-top: 10px; }
+
+  .animal {
+    padding-right: 80px; } }
+@media screen and (min-width: 790px) {
+  .two .week-title {
+    margin-top: 20px; }
+
+  .week-two-copy {
+    margin-top: 0;
+    padding-top: 0; }
+
+  .week-two-copy span {
+    font-size: 26px; }
+
+  b {
+    font-size: 40px;
+    font-style: italic; }
+
+  .two {
+    background-color: #e2b894;
+    background-image: radial-gradient(circle, #d0e3f2 30%, #FFF 40%, #e2b894); }
+
+  .could {
+    margin-bottom: 0; }
+
+  .animal,
+  .hate {
+    margin-bottom: 0;
+    margin-top: 0; }
+
+  .grumpy-steve-bear {
+    max-height: 300px; }
+
+  .week-two-copy .steve {
+    font-size: 20px; }
+
+  .two .fonts {
+    margin-top: 0; } }
+.arvo {
+  font-family: "Arvo", serif; }
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif; }
+
+.fonts .arvo {
+  font-size: 18px; }
+
+.week-three-copy {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  width: 100vw; }
+
+.week-three-copy span {
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center; }
+
+/*# sourceMappingURL=styles.css.map */

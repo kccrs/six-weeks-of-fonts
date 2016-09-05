@@ -1,0 +1,207 @@
+// WEEK TWO STYLES
+
+.two {
+  background-color: $color-week-two-complement-grumpy;
+  background-image: radial-gradient(circle, lighten($color-week-two-grumpy, 15) 20%, #FFF 25%, $color-week-two-complement-grumpy);
+}
+
+.two .week-title {
+  border-bottom: 2px solid $color-week-two-grumpy;
+}
+
+.week-two-copy {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  span {
+    display: block;
+    font-family: $font-open-sans;
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+b{
+  font-family: $font-vollkorn;
+  font-size: 30px;
+  margin: 0 3px;
+}
+
+.could {
+  margin-bottom: 10px;
+}
+
+.because {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.animal {
+  text-align: right;
+  margin: 20px 0;
+}
+
+.hate {
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.steve {
+  text-align: center;
+}
+
+.two .fonts {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.two .fonts li {
+  padding-left: 10px;
+}
+
+.fonts .vollkorn {
+  font-size: 15px;
+  // padding-top: 2px;
+}
+
+.grumpy-steve-bear {
+  display: block;
+  margin: 0 auto;
+  max-height: 200px;
+  width: auto;
+}
+
+@media screen and (min-width: 480px) {
+
+// WEEK TWO STYLES
+
+  .two .week-title {
+    margin-bottom: 5px;
+    padding-top: 10px;
+  }
+
+  .two .date {
+    height: 20px;
+  }
+
+  .grumpy-steve-bear {
+    margin-top: 40px;
+  }
+
+  .two .fonts {
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .two .fonts li {
+    padding: 0 10px 0 15px;
+  }
+
+  .hate {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  // WEEK TWO STYLES
+
+  .could {
+    padding-left: 60px;
+  }
+
+  .hate {
+    padding-left: 40px;
+  }
+
+  .because {
+    padding-right: 30px;
+  }
+
+  .animal {
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+
+  .two .fonts {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 790px) {
+
+  // WEEK TWO STYLES
+
+  .two h2 {
+    height: 60px;
+  }
+
+  .because {
+    margin-bottom: 0;
+  }
+
+  .grumpy-steve-bear {
+    margin-top: 0;
+    // margin-bottom: 15px;
+  }
+
+  .animal,
+  .hate {
+    margin-top: 10px;
+  }
+
+  .animal {
+    padding-right: 80px;
+  }
+}
+
+@media screen and (min-width: 790px) {
+
+  // WEEK TWO STYLES
+
+  .two .week-title {
+    margin-top: 20px;
+  }
+
+  .week-two-copy {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .week-two-copy span {
+    font-size: 26px;
+  }
+
+  b {
+    font-size: 40px;
+    font-style: italic;
+  }
+
+  .two {
+    background-color: $color-week-two-complement-grumpy;
+    background-image: radial-gradient(circle, lighten($color-week-two-grumpy, 15) 30%, #FFF 40%, $color-week-two-complement-grumpy);
+  }
+
+  .could {
+    margin-bottom: 0;
+  }
+
+  .animal,
+  .hate {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .grumpy-steve-bear {
+    max-height: 300px;
+  }
+
+  .week-two-copy .steve {
+    font-size: 20px;
+  }
+
+  .two .fonts {
+    margin-top: 0;
+  }
+}

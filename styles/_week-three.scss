@@ -1,0 +1,72 @@
+// WEEK THREE STYLES
+
+// <section class="week three">
+//   <h2 class="week-title"><a name="three">Week Three</a></h2>
+//   <h3 class="week-date">September 8, 2016</h3>
+//   <p>
+//     "Everything in moderation, including moderation" - Oscar Wilde
+//   </p>
+//   <ul class="fonts"> Fonts Used:
+//     <li class="arvo"><a href="https://fonts.googleapis.com/css?family=Arvo">Arvo</a></li>
+//     <li class="noto-sans"><a href="https://fonts.googleapis.com/css?family=Noto+Sans">Noto Sans</a></li>
+//   </ul>
+// </section>
+
+.arvo {
+  font-family: $font-arvo;
+}
+
+.noto-sans {
+  font-family: $font-noto-sans;
+}
+
+.fonts .arvo {
+  font-size: 18px;
+}
+
+.week-three-copy {
+  // border: 2px solid orange;
+  font-family: $font-noto-sans;
+  font-size: 24px;
+  // height: 60vh;
+  // line-height: 2em;
+  // margin-top: 20px;
+  // padding: 30px;
+  width: 100vw;
+}
+
+.week-three-copy span {
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+
+// @for $i from 1 through 100
+//   .char#{$i}
+//     +transform(rotate(($i*6)+deg))
+
+.author {
+  // font-family: $font-noto-sans;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+
+}
+
+
+@media screen and (min-width: 790px) {
+
+}
+
+@media screen and (min-width: 790px) {
+
+}

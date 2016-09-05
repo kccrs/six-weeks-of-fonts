@@ -1,0 +1,210 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// HEADER STYLES
+
+header {
+  background-color: $color-header;
+  border-bottom: 2px solid $color-header-secondary;
+  margin-top: -5px;
+}
+
+h1 {
+  font-family: $font-main;
+  font-size: 1.6em;
+  padding-top: 30px;
+  text-align: center;
+}
+
+h4 {
+  font-family: $font-secondary;
+  line-height: 1.5em;
+  margin: 15px 0;
+  text-align: center;
+}
+
+nav {
+  height: 35px;
+  margin: 10px auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a,
+nav a:visited {
+  color: $color-nav-li;
+  text-decoration: none;
+  &:hover {
+    color: $color-header-secondary;
+  }
+}
+
+nav li {
+  font-family: $font-main;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.hidden {
+  display: none;
+}
+
+// MAIN CONTENT
+
+.main-content {
+  background-color: $color-main-background;
+  height: 500px;
+}
+
+h2 {
+  font-family: $font-main;
+  font-size: 22px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.main-about {
+  font-family: $font-secondary;
+  font-size: 1.3em;
+  line-height: 2em;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+// GLOBAL WEEK STYLES
+
+.week-title {
+  border-bottom: 2px solid $color-week-one-fire;
+  padding-bottom: 10px;
+  width: 200px;
+}
+
+h3 {
+  font-family: $font-main;
+  font-size: 14px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.week {
+  border: 2px solid black;
+  border-top: none;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.fonts {
+  display: flex;
+  font-family: $font-main;
+  height: 30px;
+  justify-content: space-around;
+  line-height: 24px;
+  margin: auto;
+  margin-top: 90px;
+  vertical-align: text-bottom;
+  width: 80vw;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+// HEADER
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: inline-block;
+  }
+
+// MAIN CONTENT STYLES
+
+  .main-content h2 {
+    padding-top: 50px;
+  }
+
+  .main-about {
+    line-height: 2.5em;
+  }
+
+// GLOBAL WEEK STYLES
+
+  .fonts {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  // MAIN CONTENT STYLES
+
+  .main-content {
+    height: 550px;
+  }
+
+  // GLOBAL WEEK STYLES
+
+}
+
+
+@media screen and (min-width: 790px) {
+
+// HEADER
+
+  h1 {
+    font-size: 2.8em;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+// MAIN CONTENT
+
+  .main-about {
+    letter-spacing: 0.1em;
+    padding-top: 20px;
+    width: 70%;
+  }
+
+// GLOBAL WEEK STYLES
+
+  h2 {
+    height: 100px;
+    padding-top: 60px;
+  }
+
+  .week-title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .week-date {
+    height: 20px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 790px) {
+
+}

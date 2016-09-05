@@ -1,0 +1,23 @@
+// Font style variables
+$font-main: 'Cantata One', serif;
+$font-secondary: 'Imprima', sans-serif;
+// Week one
+$font-unna: 'Unna', serif;
+$font-lato: 'Lato', sans-serif;
+// Week two
+$font-vollkorn: 'Vollkorn', serif;
+$font-open-sans: 'Open Sans', sans-serif;
+// Week three
+$font-arvo: 'Arvo', serif;
+$font-noto-sans: 'Noto Sans', sans-serif;
+
+// Color style variables
+
+$color-header: #E8E6E3;
+$color-header-secondary: #FF7F66;
+$color-main-background: #7ECEFD;
+$color-nav-li: #2185C5;
+$color-week-one-background-gray: lighten(#3E454C, 10);
+$color-week-one-fire: darken($color-header-secondary, 20);
+$color-week-two-grumpy: #94BEE2;
+$color-week-two-complement-grumpy: complement($color-week-two-grumpy);
