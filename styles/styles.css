@@ -99,12 +99,14 @@ nav li {
   background-color: #7ECEFD;
   height: 500px; }
 
+.about-title {
+  padding-top: 8vh; }
+
 h2 {
   font-family: "Cantata One", serif;
   font-size: 22px;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding-top: 30px;
   text-align: center; }
 
 .main-about {
@@ -445,17 +447,67 @@ b {
 .fonts .arvo {
   font-size: 18px; }
 
+.three {
+  background: #F5F5F5; }
+
+.three .week-title {
+  border-bottom: 2px solid #FF0088; }
+
 .week-three-copy {
-  font-family: "Noto Sans", sans-serif;
   font-size: 24px;
-  width: 100vw; }
+  height: 75vh;
+  margin-top: 20px;
+  width: 100vw;
+  position: absolute; }
 
 .week-three-copy span {
-  height: 200px;
-  position: absolute;
-  width: 20px;
-  left: 0;
-  top: 0;
-  transform-origin: bottom center; }
+  display: block;
+  margin: auto;
+  position: relative;
+  text-align: center; }
+
+.right,
+.left {
+  background: #FF0088;
+  line-height: 2em;
+  width: 150vw; }
+
+.right {
+  left: 5vh;
+  top: 15.5vh;
+  transform: rotateZ(90deg);
+  letter-spacing: .15em;
+  font-family: "Noto Sans", sans-serif; }
+
+.top {
+  line-height: 2em;
+  background: #00E4FF;
+  font-family: "Arvo", serif; }
+
+.left {
+  right: 30vh;
+  top: 22.5vh;
+  letter-spacing: .14em;
+  transform: rotateZ(270deg);
+  font-family: "Noto Sans", sans-serif; }
+
+.inside {
+  top: 10vh;
+  font-family: "Arvo", serif; }
+
+.bottom {
+  line-height: 2em;
+  background: #00E4FF;
+  top: 35vh;
+  font-family: "Arvo", serif; }
+
+.author {
+  top: 38vh;
+  font-size: 20px;
+  line-height: 1em;
+  font-family: "Noto Sans", sans-serif; }
+
+.three .fonts {
+  margin-top: 80vh; }
 
 /*# sourceMappingURL=styles.css.map */
