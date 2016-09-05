@@ -13,79 +13,83 @@
 }
 
 .three {
-  background: #F5F5F5;
+  background-color: $color-week-three-background;
 }
 
 .three .week-title {
-  border-bottom: 2px solid #FF0088;
+  border-bottom: 2px solid saturate($color-week-three-primary, 50);
+  text-shadow: -.5px -.5px $color-week-three-secondary;
 }
 
 .week-three-copy {
   font-size: 24px;
   height: 75vh;
   margin-top: 20px;
+  overflow: hidden;
+  position: relative;
   width: 100vw;
-  position: absolute;
 }
 
 .week-three-copy span {
-  display: block;
-  margin: auto;
-  position: relative;
+  position: absolute;
   text-align: center;
 }
 
 .right,
 .left {
-  background: #FF0088;
+  background: $color-week-three-primary;
   line-height: 2em;
-  width: 150vw;
+  width: 70vh;
 }
 
 .right {
-  left: 5vh;
-  top: 15.5vh;
-  transform: rotateZ(90deg);
-  letter-spacing: .15em;
   font-family: $font-noto-sans;
-
+  right: -28vh;
+  letter-spacing: .15em;
+  top: 40%;
+  transform: rotateZ(90deg);
 }
 
 .top {
-  line-height: 2em;
-  background: #00E4FF;
+  background: $color-week-three-secondary;
   font-family: $font-arvo;
+  line-height: 2em;
+  top: 8vh;
+  width: 100vw;
 }
 
 .left {
-  right: 30vh;
-  top: 22.5vh;
-  letter-spacing: .14em;
-  transform: rotateZ(270deg);
   font-family: $font-noto-sans;
+  letter-spacing: .14em;
+  right: 10vw;
+  top: 30vh;
+  transform: rotateZ(270deg);
 }
 
 .inside {
-  top: 10vh;
   font-family: $font-arvo;
+  top: 30vh;
+  width: 100vw;
 }
 
 .bottom {
-  line-height: 2em;
-  background: #00E4FF;
-  top: 35vh;
+  background: $color-week-three-secondary;
   font-family: $font-arvo;
+  line-height: 2em;
+  bottom: 18vh;
+  width: 100vw;
 }
 
 .author {
-  top: 38vh;
+  font-family: $font-noto-sans;
   font-size: 20px;
   line-height: 1em;
-  font-family: $font-noto-sans;
+  bottom: 1vh;
+  width: 100vw;
 }
 
 .three .fonts {
-  margin-top: 80vh;
+  margin-top: 3vh;
 }
 
 @media screen and (min-width: 480px) {

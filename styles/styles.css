@@ -448,66 +448,71 @@ b {
   font-size: 18px; }
 
 .three {
-  background: #F5F5F5; }
+  background-color: gainsboro; }
 
 .three .week-title {
-  border-bottom: 2px solid #FF0088; }
+  border-bottom: 2px solid #ff0088;
+  text-shadow: -0.5px -0.5px #00E4FF; }
 
 .week-three-copy {
   font-size: 24px;
   height: 75vh;
   margin-top: 20px;
-  width: 100vw;
-  position: absolute; }
+  overflow: hidden;
+  position: relative;
+  width: 100vw; }
 
 .week-three-copy span {
-  display: block;
-  margin: auto;
-  position: relative;
+  position: absolute;
   text-align: center; }
 
 .right,
 .left {
   background: #FF0088;
   line-height: 2em;
-  width: 150vw; }
+  width: 70vh; }
 
 .right {
-  left: 5vh;
-  top: 15.5vh;
-  transform: rotateZ(90deg);
+  font-family: "Noto Sans", sans-serif;
+  right: -28vh;
   letter-spacing: .15em;
-  font-family: "Noto Sans", sans-serif; }
+  top: 40%;
+  transform: rotateZ(90deg); }
 
 .top {
-  line-height: 2em;
   background: #00E4FF;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  line-height: 2em;
+  top: 8vh;
+  width: 100vw; }
 
 .left {
-  right: 30vh;
-  top: 22.5vh;
+  font-family: "Noto Sans", sans-serif;
   letter-spacing: .14em;
-  transform: rotateZ(270deg);
-  font-family: "Noto Sans", sans-serif; }
+  right: 10vw;
+  top: 30vh;
+  transform: rotateZ(270deg); }
 
 .inside {
-  top: 10vh;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  top: 30vh;
+  width: 100vw; }
 
 .bottom {
-  line-height: 2em;
   background: #00E4FF;
-  top: 35vh;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  line-height: 2em;
+  bottom: 18vh;
+  width: 100vw; }
 
 .author {
-  top: 38vh;
+  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
   line-height: 1em;
-  font-family: "Noto Sans", sans-serif; }
+  bottom: 1vh;
+  width: 100vw; }
 
 .three .fonts {
-  margin-top: 80vh; }
+  margin-top: 3vh; }
 
 /*# sourceMappingURL=styles.css.map */

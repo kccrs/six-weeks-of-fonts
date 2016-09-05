@@ -17,7 +17,18 @@ $color-header: #E8E6E3;
 $color-header-secondary: #FF7F66;
 $color-main-background: #7ECEFD;
 $color-nav-li: #2185C5;
+
+// Week one
 $color-week-one-background-gray: lighten(#3E454C, 10);
 $color-week-one-fire: darken($color-header-secondary, 20);
+
+// Week two
 $color-week-two-grumpy: #94BEE2;
 $color-week-two-complement-grumpy: complement($color-week-two-grumpy);
+
+// Week three
+$color-week-three-background: darken(#F5F5F5, 10);
+$color-week-three-primary: #FF0088;
+$color-week-three-secondary: #00E4FF;
+
+// Week four
