@@ -8,101 +8,148 @@
   font-family: $font-noto-sans;
 }
 
-.fonts .arvo {
-  font-size: 18px;
-}
-
 .three {
-  background: #F5F5F5;
+  background-color: $color-week-three-background;
 }
 
 .three .week-title {
-  border-bottom: 2px solid #FF0088;
+  border-bottom: 2px solid saturate($color-week-three-primary, 50);
+  // text-shadow: -.5px -.5px $color-week-three-secondary;
+  color: darken($color-week-three-secondary, 15);
 }
 
 .week-three-copy {
   font-size: 24px;
   height: 75vh;
   margin-top: 20px;
-  width: 100vw;
-  position: absolute;
+  overflow: hidden;
+  position: relative;
 }
 
 .week-three-copy span {
-  display: block;
-  margin: auto;
-  position: relative;
+  position: absolute;
   text-align: center;
 }
 
 .right,
 .left {
-  background: #FF0088;
-  line-height: 2em;
-  width: 150vw;
+  background: $color-week-three-primary;
+  line-height: 1.7em;
+  width: 100vh;
 }
 
 .right {
-  left: 5vh;
-  top: 15.5vh;
-  transform: rotateZ(90deg);
-  letter-spacing: .15em;
   font-family: $font-noto-sans;
-
-}
-
-.top {
-  line-height: 2em;
-  background: #00E4FF;
-  font-family: $font-arvo;
+  right: -43vh;
+  letter-spacing: .15em;
+  top: 40%;
+  transform: rotateZ(90deg);
 }
 
 .left {
-  right: 30vh;
-  top: 22.5vh;
-  letter-spacing: .14em;
-  transform: rotateZ(270deg);
   font-family: $font-noto-sans;
+  letter-spacing: .14em;
+  left: -43vh;
+  bottom: 53%;
+  transform: rotateZ(-90deg);
+}
+
+.author,
+.bottom,
+.inside,
+.top {
+  width: 100vw;
+}
+
+.top {
+  background: $color-week-three-secondary;
+  font-family: $font-arvo;
+  line-height: 2em;
+  top: 8vh;
 }
 
 .inside {
-  top: 10vh;
   font-family: $font-arvo;
+  top: 30vh;
 }
 
 .bottom {
-  line-height: 2em;
-  background: #00E4FF;
-  top: 35vh;
+  background: $color-week-three-secondary;
   font-family: $font-arvo;
+  line-height: 2em;
+  bottom: 15vh;
 }
 
 .author {
-  top: 38vh;
+  font-family: $font-noto-sans;
   font-size: 20px;
   line-height: 1em;
-  font-family: $font-noto-sans;
+  bottom: 1%;
 }
 
-.three .fonts {
-  margin-top: 80vh;
+.fonts .arvo {
+  font-size: 17px;
 }
 
 @media screen and (min-width: 480px) {
 
-}
+  .right {
+    right: -38vh;
+  }
 
+  .left {
+    left: -38vh;
+  }
+}
 
 @media screen and (min-width: 600px) {
 
+  .right {
+    right: -33vh;
+  }
 
+  .left {
+    left: -33vh;
+  }
 }
 
+@media screen and (min-width: 700px) {
+
+  .right {
+    right: -28vh;
+  }
+
+  .left {
+    left: -28vh;
+  }
+
+  .three .fonts {
+    justify-content: center;
+    li {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
 
 @media screen and (min-width: 790px) {
 
+  .right {
+    right: -25vh;
+  }
+
+  .left {
+    left: -25vh;
+  }
 }
 
 @media screen and (min-width: 790px) {
 
+  .right {
+    right: -15vh;
+  }
+
+  .left {
+    left: -15vh;
+  }
 }

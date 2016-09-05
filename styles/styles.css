@@ -142,7 +142,7 @@ h3 {
   justify-content: space-around;
   line-height: 24px;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 4vh;
   vertical-align: text-bottom;
   width: 80vw; }
   .fonts a {
@@ -164,7 +164,7 @@ h3 {
     line-height: 2.5em; }
 
   .fonts {
-    margin-top: 60px; } }
+    margin-top: 4vh; } }
 @media screen and (min-width: 600px) {
   .main-content {
     height: 550px; } }
@@ -180,10 +180,6 @@ h3 {
     padding-top: 20px;
     width: 70%; }
 
-  h2 {
-    height: 100px;
-    padding-top: 60px; }
-
   .week-title {
     margin-bottom: 10px;
     padding-bottom: 10px; }
@@ -193,6 +189,13 @@ h3 {
     margin-top: 5px; } }
 .one {
   background-color: #555f68; }
+
+.week-one-copy {
+  font-size: 20px;
+  letter-spacing: .5em;
+  line-height: 2.2em;
+  margin: 10px auto;
+  width: 80%; }
 
 .fire {
   animation: skew 1s infinite;
@@ -216,6 +219,7 @@ h3 {
   font-size: 40px;
   letter-spacing: .1em;
   margin: 0 auto;
+  margin-bottom: 18vh;
   transform: skewY(20deg);
   width: 15%; }
 
@@ -228,22 +232,19 @@ h3 {
 .lato {
   font-family: "Lato", sans-serif; }
 
-.week-one-copy {
-  font-size: 20px;
-  letter-spacing: .5em;
-  line-height: 2.2em;
-  margin: 10px auto;
-  width: 80%; }
+.one .fonts a:hover {
+  color: #7ECEFD; }
 
+@media screen and (min-width: 400px) {
+  .blue {
+    margin-bottom: 27vh; } }
 @media screen and (min-width: 480px) {
   .week-one-copy {
     font-size: 1.4em;
-    margin-top: 20px;
-    padding-left: 40px;
-    width: 85%; }
+    margin-top: 20px; }
 
-  .one .fonts {
-    margin-top: 100px; } }
+  .blue {
+    margin-bottom: 25vh; } }
 @media screen and (min-width: 600px) {
   .week-one-copy {
     line-height: 3em; } }
@@ -251,49 +252,13 @@ h3 {
   .week-one-copy {
     font-size: 1.8em;
     letter-spacing: 0.3em;
-    line-height: 2.5em;
-    width: 70%; }
+    line-height: 2.5em; }
 
   .blue {
     margin-top: 40px; } }
-@media screen and (min-width: 790px) {
-  .one .fonts {
-    margin-top: 60px; }
-
-  .two .week-title {
-    margin-top: 20px; }
-
-  .week-two-copy {
-    margin-top: 0;
-    padding-top: 0; }
-
-  .week-two-copy span {
-    font-size: 26px; }
-
-  b {
-    font-size: 40px;
-    font-style: italic; }
-
-  .two {
-    background-color: #e2b894;
-    background-image: radial-gradient(circle, #d0e3f2 30%, #FFF 40%, #e2b894); }
-
-  .could {
-    margin-bottom: 0; }
-
-  .animal,
-  .hate {
-    margin-bottom: 0;
-    margin-top: 0; }
-
-  .grumpy-steve-bear {
-    max-height: 300px; }
-
-  .week-two-copy .steve {
-    font-size: 20px; }
-
-  .two .fonts {
-    margin-top: 0; } }
+@media screen and (min-width: 1000px) {
+  .week-one-copy {
+    width: 70%; } }
 .two {
   background-color: #e2b894;
   background-image: radial-gradient(circle, #d0e3f2 20%, #FFF 25%, #e2b894); }
@@ -335,11 +300,13 @@ b {
   text-align: center; }
 
 .two .fonts {
-  font-size: 14px;
-  margin-top: 30px; }
+  font-size: 14px; }
 
 .two .fonts li {
   padding-left: 10px; }
+
+.two .fonts a:hover {
+  color: #94BEE2; }
 
 .fonts .vollkorn {
   font-size: 15px; }
@@ -362,8 +329,7 @@ b {
     margin-top: 40px; }
 
   .two .fonts {
-    justify-content: center;
-    margin-top: 50px; }
+    justify-content: center; }
 
   .two .fonts li {
     padding: 0 10px 0 15px; }
@@ -371,6 +337,9 @@ b {
   .hate {
     margin-top: 10px; } }
 @media screen and (min-width: 600px) {
+  .week-two-copy {
+    padding-bottom: 0; }
+
   .could {
     padding-left: 60px; }
 
@@ -383,13 +352,31 @@ b {
   .animal {
     margin-top: 30px;
     padding-right: 30px;
-    padding-top: 20px; }
-
-  .two .fonts {
-    margin-top: 10px; } }
+    padding-top: 20px; } }
 @media screen and (min-width: 790px) {
-  .two h2 {
-    height: 60px; }
+  .two {
+    background-image: radial-gradient(circle, #d0e3f2 30%, #FFF 40%, #e2b894); }
+
+  .week-two-copy {
+    margin-top: 0;
+    padding-top: 0; }
+
+  b {
+    font-size: 40px;
+    font-style: italic; }
+
+  .could,
+  .because,
+  .animal,
+  .hate {
+    font-size: 26px; }
+
+  .steve {
+    font-size: 16px;
+    margin: 10px; }
+
+  .could {
+    margin-top: 10px; }
 
   .because {
     margin-bottom: 0; }
@@ -402,39 +389,15 @@ b {
     margin-top: 10px; }
 
   .animal {
-    padding-right: 80px; } }
-@media screen and (min-width: 790px) {
-  .two .week-title {
-    margin-top: 20px; }
-
-  .week-two-copy {
-    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 60px;
     padding-top: 0; }
 
-  .week-two-copy span {
-    font-size: 26px; }
-
-  b {
-    font-size: 40px;
-    font-style: italic; }
-
-  .two {
-    background-color: #e2b894;
-    background-image: radial-gradient(circle, #d0e3f2 30%, #FFF 40%, #e2b894); }
-
-  .could {
-    margin-bottom: 0; }
-
-  .animal,
   .hate {
-    margin-bottom: 0;
-    margin-top: 0; }
+    margin-bottom: 0; }
 
   .grumpy-steve-bear {
     max-height: 300px; }
-
-  .week-two-copy .steve {
-    font-size: 20px; }
 
   .two .fonts {
     margin-top: 0; } }
@@ -444,70 +407,110 @@ b {
 .noto-sans {
   font-family: "Noto Sans", sans-serif; }
 
-.fonts .arvo {
-  font-size: 18px; }
-
 .three {
-  background: #F5F5F5; }
+  background-color: gainsboro; }
 
 .three .week-title {
-  border-bottom: 2px solid #FF0088; }
+  border-bottom: 2px solid #ff0088;
+  color: #00a0b3; }
 
 .week-three-copy {
   font-size: 24px;
   height: 75vh;
   margin-top: 20px;
-  width: 100vw;
-  position: absolute; }
+  overflow: hidden;
+  position: relative; }
 
 .week-three-copy span {
-  display: block;
-  margin: auto;
-  position: relative;
+  position: absolute;
   text-align: center; }
 
 .right,
 .left {
   background: #FF0088;
-  line-height: 2em;
-  width: 150vw; }
+  line-height: 1.7em;
+  width: 100vh; }
 
 .right {
-  left: 5vh;
-  top: 15.5vh;
-  transform: rotateZ(90deg);
+  font-family: "Noto Sans", sans-serif;
+  right: -43vh;
   letter-spacing: .15em;
-  font-family: "Noto Sans", sans-serif; }
-
-.top {
-  line-height: 2em;
-  background: #00E4FF;
-  font-family: "Arvo", serif; }
+  top: 40%;
+  transform: rotateZ(90deg); }
 
 .left {
-  right: 30vh;
-  top: 22.5vh;
+  font-family: "Noto Sans", sans-serif;
   letter-spacing: .14em;
-  transform: rotateZ(270deg);
-  font-family: "Noto Sans", sans-serif; }
+  left: -43vh;
+  bottom: 53%;
+  transform: rotateZ(-90deg); }
+
+.author,
+.bottom,
+.inside,
+.top {
+  width: 100vw; }
+
+.top {
+  background: #00E4FF;
+  font-family: "Arvo", serif;
+  line-height: 2em;
+  top: 8vh; }
 
 .inside {
-  top: 10vh;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  top: 30vh; }
 
 .bottom {
-  line-height: 2em;
   background: #00E4FF;
-  top: 35vh;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  line-height: 2em;
+  bottom: 15vh; }
 
 .author {
-  top: 38vh;
+  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
   line-height: 1em;
-  font-family: "Noto Sans", sans-serif; }
+  bottom: 1%; }
 
-.three .fonts {
-  margin-top: 80vh; }
+.fonts .arvo {
+  font-size: 17px; }
+
+@media screen and (min-width: 480px) {
+  .right {
+    right: -38vh; }
+
+  .left {
+    left: -38vh; } }
+@media screen and (min-width: 600px) {
+  .right {
+    right: -33vh; }
+
+  .left {
+    left: -33vh; } }
+@media screen and (min-width: 700px) {
+  .right {
+    right: -28vh; }
+
+  .left {
+    left: -28vh; }
+
+  .three .fonts {
+    justify-content: center; }
+    .three .fonts li {
+      margin-left: 15px;
+      margin-right: 15px; } }
+@media screen and (min-width: 790px) {
+  .right {
+    right: -25vh; }
+
+  .left {
+    left: -25vh; } }
+@media screen and (min-width: 790px) {
+  .right {
+    right: -15vh; }
+
+  .left {
+    left: -15vh; } }
 
 /*# sourceMappingURL=styles.css.map */
