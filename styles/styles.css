@@ -469,12 +469,12 @@ b {
 .right,
 .left {
   background: #FF0088;
-  line-height: 2em;
-  width: 70vh; }
+  line-height: 1.7em;
+  width: 100vh; }
 
 .right {
   font-family: "Noto Sans", sans-serif;
-  right: -28vh;
+  right: -43vh;
   letter-spacing: .15em;
   top: 40%;
   transform: rotateZ(90deg); }
@@ -483,15 +483,15 @@ b {
   background: #00E4FF;
   font-family: "Arvo", serif;
   line-height: 2em;
-  top: 8vh;
+  top: 10vh;
   width: 100vw; }
 
 .left {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: .14em;
-  right: 10vw;
-  top: 30vh;
-  transform: rotateZ(270deg); }
+  left: -43vh;
+  bottom: 53%;
+  transform: rotateZ(-90deg); }
 
 .inside {
   font-family: "Arvo", serif;
@@ -502,7 +502,7 @@ b {
   background: #00E4FF;
   font-family: "Arvo", serif;
   line-height: 2em;
-  bottom: 18vh;
+  bottom: 15vh;
   width: 100vw; }
 
 .author {
