@@ -115,11 +115,11 @@ h3 {
   display: flex;
   font-family: $font-main;
   height: 30px;
-  justify-content: space-around;
+  justify-content: center;
   line-height: 24px;
   margin: auto;
   margin-top: 4vh;
-  vertical-align: text-bottom;
+  vertical-align: top;
   width: 80vw;
   a {
     color: black;
@@ -155,6 +155,10 @@ h3 {
   .fonts {
     margin-top: 4vh;
   }
+
+  .fonts li {
+    padding: 0 10px 0 15px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -167,8 +171,8 @@ h3 {
 
   // GLOBAL WEEK STYLES
 
-}
 
+}
 
 @media screen and (min-width: 790px) {
 

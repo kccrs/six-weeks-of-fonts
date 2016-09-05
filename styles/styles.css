@@ -139,11 +139,11 @@ h3 {
   display: flex;
   font-family: "Cantata One", serif;
   height: 30px;
-  justify-content: space-around;
+  justify-content: center;
   line-height: 24px;
   margin: auto;
   margin-top: 4vh;
-  vertical-align: text-bottom;
+  vertical-align: top;
   width: 80vw; }
   .fonts a {
     color: black;
@@ -164,7 +164,10 @@ h3 {
     line-height: 2.5em; }
 
   .fonts {
-    margin-top: 4vh; } }
+    margin-top: 4vh; }
+
+  .fonts li {
+    padding: 0 10px 0 15px; } }
 @media screen and (min-width: 600px) {
   .main-content {
     height: 550px; } }
@@ -230,7 +233,8 @@ h3 {
   font-size: 20px; }
 
 .lato {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-size: 17px; }
 
 .one .fonts a:hover {
   color: #7ECEFD; }
@@ -330,9 +334,6 @@ b {
 
   .two .fonts {
     justify-content: center; }
-
-  .two .fonts li {
-    padding: 0 10px 0 15px; }
 
   .hate {
     margin-top: 10px; } }
@@ -472,6 +473,9 @@ b {
   font-size: 20px;
   line-height: 1em;
   bottom: 1%; }
+
+.three .fonts a:hover {
+  color: #FF0088; }
 
 .fonts .arvo {
   font-size: 17px; }
