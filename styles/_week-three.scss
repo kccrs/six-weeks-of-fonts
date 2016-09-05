@@ -12,17 +12,20 @@
   font-size: 18px;
 }
 
+.three {
+
+  background: #F5F5F5;
+}
+
 .week-three-copy {
   font-size: 24px;
   height: 75vh;
   margin-top: 20px;
   width: 100vw;
-  line-height: 1.5em;
   position: absolute;
 }
 
 .week-three-copy span {
-  border: 2px solid teal;
   display: block;
   font-family: $font-arvo;
   margin: auto;
@@ -33,7 +36,10 @@
 
 .right,
 .left {
+
+  background: #FF0088;
   line-height: 2em;
+  letter-spacing: .15em;
   // position: relative;
   // margin-top: 20vh;
 }
@@ -46,15 +52,19 @@
 }
 
 .top {
+  line-height: 2em;
+
+  background: #00E4FF;
+  font-family: $font-noto-sans;
   // margin: auto;
-//   width: 100vw;
+  width: 100vw;
 }
 
 .left {
   // margin-right: 75vh;
   // margin-top: 10vh;
   right: 20vh;
-  top: 22vh;
+  top: 20vh;
   transform: rotateZ(270deg);
 }
 
@@ -64,6 +74,10 @@
 }
 
 .bottom {
+  line-height: 2em;
+  background: #00E4FF;
+  font-family: $font-noto-sans;
+
   top: 30vh;
   // margin-top: 10px;
   // margin-bottom: auto;

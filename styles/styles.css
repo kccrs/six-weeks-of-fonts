@@ -447,16 +447,17 @@ b {
 .fonts .arvo {
   font-size: 18px; }
 
+.three {
+  background: #F5F5F5; }
+
 .week-three-copy {
   font-size: 24px;
   height: 75vh;
   margin-top: 20px;
   width: 100vw;
-  line-height: 1.5em;
   position: absolute; }
 
 .week-three-copy span {
-  border: 2px solid teal;
   display: block;
   font-family: "Arvo", serif;
   margin: auto;
@@ -466,22 +467,33 @@ b {
 
 .right,
 .left {
-  line-height: 2em; }
+  background: #FF0088;
+  line-height: 2em;
+  letter-spacing: .15em; }
 
 .right {
   left: 20vh;
   top: 15vh;
   transform: rotateZ(90deg); }
 
+.top {
+  line-height: 2em;
+  background: #00E4FF;
+  font-family: "Noto Sans", sans-serif;
+  width: 100vw; }
+
 .left {
   right: 20vh;
-  top: 22vh;
+  top: 20vh;
   transform: rotateZ(270deg); }
 
 .inside {
   top: 10vh; }
 
 .bottom {
+  line-height: 2em;
+  background: #00E4FF;
+  font-family: "Noto Sans", sans-serif;
   top: 30vh; }
 
 .author {
