@@ -450,6 +450,9 @@ b {
 .three {
   background: #F5F5F5; }
 
+.three .week-title {
+  border-bottom: 2px solid #FF0088; }
+
 .week-three-copy {
   font-size: 24px;
   height: 75vh;
@@ -459,47 +462,50 @@ b {
 
 .week-three-copy span {
   display: block;
-  font-family: "Arvo", serif;
   margin: auto;
   position: relative;
-  text-align: center;
-  width: 70vw; }
+  text-align: center; }
 
 .right,
 .left {
   background: #FF0088;
   line-height: 2em;
-  letter-spacing: .15em; }
+  width: 150vw; }
 
 .right {
-  left: 20vh;
-  top: 15vh;
-  transform: rotateZ(90deg); }
+  left: 5vh;
+  top: 15.5vh;
+  transform: rotateZ(90deg);
+  letter-spacing: .15em;
+  font-family: "Noto Sans", sans-serif; }
 
 .top {
   line-height: 2em;
   background: #00E4FF;
-  font-family: "Noto Sans", sans-serif;
-  width: 100vw; }
+  font-family: "Arvo", serif; }
 
 .left {
-  right: 20vh;
-  top: 20vh;
-  transform: rotateZ(270deg); }
+  right: 30vh;
+  top: 22.5vh;
+  letter-spacing: .14em;
+  transform: rotateZ(270deg);
+  font-family: "Noto Sans", sans-serif; }
 
 .inside {
-  top: 10vh; }
+  top: 10vh;
+  font-family: "Arvo", serif; }
 
 .bottom {
   line-height: 2em;
   background: #00E4FF;
-  font-family: "Noto Sans", sans-serif;
-  top: 30vh; }
+  top: 35vh;
+  font-family: "Arvo", serif; }
 
 .author {
   top: 38vh;
   font-size: 20px;
-  line-height: 1em; }
+  line-height: 1em;
+  font-family: "Noto Sans", sans-serif; }
 
 .three .fonts {
   margin-top: 80vh; }

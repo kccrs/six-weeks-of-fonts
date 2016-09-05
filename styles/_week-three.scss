@@ -13,8 +13,11 @@
 }
 
 .three {
-
   background: #F5F5F5;
+}
+
+.three .week-title {
+  border-bottom: 2px solid #FF0088;
 }
 
 .week-three-copy {
@@ -27,68 +30,58 @@
 
 .week-three-copy span {
   display: block;
-  font-family: $font-arvo;
   margin: auto;
   position: relative;
   text-align: center;
-  width: 70vw;
 }
 
 .right,
 .left {
-
   background: #FF0088;
   line-height: 2em;
-  letter-spacing: .15em;
-  // position: relative;
-  // margin-top: 20vh;
+  width: 150vw;
 }
 
 .right {
-  //  padding-left: 10vw;
-  left: 20vh;
-  top: 15vh;
+  left: 5vh;
+  top: 15.5vh;
   transform: rotateZ(90deg);
+  letter-spacing: .15em;
+  font-family: $font-noto-sans;
+
 }
 
 .top {
   line-height: 2em;
-
   background: #00E4FF;
-  font-family: $font-noto-sans;
-  // margin: auto;
-  width: 100vw;
+  font-family: $font-arvo;
 }
 
 .left {
-  // margin-right: 75vh;
-  // margin-top: 10vh;
-  right: 20vh;
-  top: 20vh;
+  right: 30vh;
+  top: 22.5vh;
+  letter-spacing: .14em;
   transform: rotateZ(270deg);
+  font-family: $font-noto-sans;
 }
 
 .inside {
   top: 10vh;
-  // margin-top: 5vh;
+  font-family: $font-arvo;
 }
 
 .bottom {
   line-height: 2em;
   background: #00E4FF;
-  font-family: $font-noto-sans;
-
-  top: 30vh;
-  // margin-top: 10px;
-  // margin-bottom: auto;
+  top: 35vh;
+  font-family: $font-arvo;
 }
 
 .author {
   top: 38vh;
-  // font-family: $font-noto-sans;
   font-size: 20px;
   line-height: 1em;
-
+  font-family: $font-noto-sans;
 }
 
 .three .fonts {
