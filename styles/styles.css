@@ -446,16 +446,11 @@ b {
   font-size: 18px; }
 
 .week-three-copy {
-  font-family: "Noto Sans", sans-serif;
+  border: 2px solid orange;
+  font-family: "Arvo", serif;
   font-size: 24px;
+  height: 60vh;
+  margin-top: 20px;
   width: 100vw; }
-
-.week-three-copy span {
-  height: 200px;
-  position: absolute;
-  width: 20px;
-  left: 0;
-  top: 0;
-  transform-origin: bottom center; }
 
 /*# sourceMappingURL=styles.css.map */
