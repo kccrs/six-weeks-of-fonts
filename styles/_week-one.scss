@@ -4,6 +4,14 @@
   background-color: $color-week-one-background-gray;
 }
 
+.week-one-copy {
+  font-size: 20px;
+  letter-spacing: .5em;
+  line-height: 2.2em;
+  margin: 10px auto;
+  width: 80%;
+}
+
 .fire {
   animation: skew 1s infinite;
   animation-direction: alternate;
@@ -31,6 +39,7 @@
   font-size: 40px;
   letter-spacing: .1em;
   margin: 0 auto;
+  margin-bottom: 18vh;
   transform: skewY(20deg);
   width: 15%;
 }
@@ -47,12 +56,16 @@
   font-family: $font-lato;
 }
 
-.week-one-copy {
-  font-size: 20px;
-  letter-spacing: .5em;
-  line-height: 2.2em;
-  margin: 10px auto;
-  width: 80%;
+.one .fonts a:hover{
+    color: $color-main-background;
+}
+
+@media screen and (min-width: 400px) {
+
+  .blue {
+    margin-bottom: 27vh;
+  }
+
 }
 
 @media screen and (min-width: 480px) {
@@ -62,12 +75,10 @@
   .week-one-copy {
     font-size: 1.4em;
     margin-top: 20px;
-    padding-left: 40px;
-    width: 85%;
   }
 
-  .one .fonts {
-    margin-top: 100px;
+  .blue {
+    margin-bottom: 25vh;
   }
 }
 
@@ -80,7 +91,6 @@
   }
 }
 
-
 @media screen and (min-width: 790px) {
 
   // WEEK ONE STYLES
@@ -89,67 +99,16 @@
     font-size: 1.8em;
     letter-spacing: 0.3em;
     line-height: 2.5em;
-    width: 70%;
   }
 
   .blue {
     margin-top: 40px;
   }
-
 }
 
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 1000px) {
 
-  // WEEK ONE STYLES
-
-  .one .fonts {
-    margin-top: 60px;
-  }
-
-  // WEEK TWO STYLES
-
-  .two .week-title {
-    margin-top: 20px;
-  }
-
-  .week-two-copy {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .week-two-copy span {
-    font-size: 26px;
-  }
-
-  b {
-    font-size: 40px;
-    font-style: italic;
-  }
-
-  .two {
-    background-color: $color-week-two-complement-grumpy;
-    background-image: radial-gradient(circle, lighten($color-week-two-grumpy, 15) 30%, #FFF 40%, $color-week-two-complement-grumpy);
-  }
-
-  .could {
-    margin-bottom: 0;
-  }
-
-  .animal,
-  .hate {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .grumpy-steve-bear {
-    max-height: 300px;
-  }
-
-  .week-two-copy .steve {
-    font-size: 20px;
-  }
-
-  .two .fonts {
-    margin-top: 0;
+  .week-one-copy {
+    width: 70%;
   }
 }

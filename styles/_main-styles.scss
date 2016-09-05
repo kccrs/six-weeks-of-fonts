@@ -118,7 +118,7 @@ h3 {
   justify-content: space-around;
   line-height: 24px;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 4vh;
   vertical-align: text-bottom;
   width: 80vw;
   a {
@@ -153,7 +153,7 @@ h3 {
 // GLOBAL WEEK STYLES
 
   .fonts {
-    margin-top: 60px;
+    margin-top: 4vh;
   }
 }
 
@@ -192,11 +192,6 @@ h3 {
 
 // GLOBAL WEEK STYLES
 
-  h2 {
-    height: 100px;
-    padding-top: 60px;
-  }
-
   .week-title {
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -206,8 +201,4 @@ h3 {
     height: 20px;
     margin-top: 5px;
   }
-}
-
-@media screen and (min-width: 790px) {
-
 }
