@@ -5,6 +5,14 @@
   background-image: radial-gradient(circle, lighten($color-week-two-grumpy, 15) 20%, #FFF 25%, $color-week-two-complement-grumpy);
 }
 
+.vollkorn {
+  font-family: $font-vollkorn;
+}
+
+.open-sans {
+  font-family: $font-open-sans;
+}
+
 .two .week-title {
   border-bottom: 2px solid $color-week-two-grumpy;
 }

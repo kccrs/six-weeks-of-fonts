@@ -267,6 +267,12 @@ h3 {
   background-color: #e2b894;
   background-image: radial-gradient(circle, #d0e3f2 20%, #FFF 25%, #e2b894); }
 
+.vollkorn {
+  font-family: "Vollkorn", serif; }
+
+.open-sans {
+  font-family: "Open Sans", sans-serif; }
+
 .two .week-title {
   border-bottom: 2px solid #94BEE2; }
 
