@@ -54,45 +54,7 @@ $(document).ready(function() {
       //do not pick the same as the current one
       colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
       colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-
     }
   }
-
   setInterval(updateGradient,10);
-
-  // const vowels = ['a', 'e', 'i', 'o', 'u'];
-  //
-  // $('.adams').css()
-//   function arrayMe(string) {
-//
-// 	// For all matching elements
-// 	$(string).each(function() {
-//
-// 		// Get contents of string
-// 		var myString = $(this).html();
-//
-// 		// Split myString into an array of characters
-// 		myString = myString.split("");
-//
-// 		// Build an html string of characters wrapped in tags with classes
-// 		var myContents = "";
-// 		// for (var i = 0; i < myString.length; i++) {
-// 		// 	myContents += '' + myString[i] + '';
-// 		// }
-//
-//     for (var i = 0; i < myString.length; i++) {
-//       if (i === 'a' || 'e' || 'i' || 'o', 'u') {
-//         myContents += <span class="vowel">i</span>
-//       }
-//     }
-// 		// Replace original string with constructed html string
-// 		$(this).html(myContents);
-// 	});
-// }
-//
-// // Calling arrayMe on page load, on class "sample-text"
-// 	var adamsQuote = $('.deadlines');
-// 	arrayMe(adamsQuote);
-//
-
 });

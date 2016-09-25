@@ -14,7 +14,6 @@
 
 .three .week-title {
   border-bottom: 2px solid saturate($color-week-three-primary, 50);
-  // text-shadow: -.5px -.5px $color-week-three-secondary;
   color: darken($color-week-three-secondary, 15);
 }
 
@@ -39,19 +38,41 @@
 }
 
 .right {
-  font-family: $font-noto-sans;
-  right: -43vh;
   letter-spacing: .15em;
+  right: -43vh;
   top: 40%;
   transform: rotateZ(90deg);
+  @media #{$breakpoint-480} {
+    right: -38vh;
+    @media #{$breakpoint-600} {
+      right: -33vh;
+      @media #{$breakpoint-700} {
+        right: -28vh;
+        @media #{$breakpoint-800} {
+          right: -15vh;
+        }
+      }
+    }
+  }
 }
 
 .left {
-  font-family: $font-noto-sans;
-  letter-spacing: .14em;
-  left: -43vh;
   bottom: 53%;
+  left: -43vh;
+  letter-spacing: .14em;
   transform: rotateZ(-90deg);
+  @media #{$breakpoint-480} {
+    left: -38vh;
+    @media #{$breakpoint-600} {
+      left: -33vh;
+      @media #{$breakpoint-700} {
+        left: -28vh;
+        @media #{$breakpoint-800} {
+          left: -15vh;
+        }
+      }
+    }
+  }
 }
 
 .author,
@@ -63,71 +84,28 @@
 
 .top {
   background: $color-week-three-secondary;
-  font-family: $font-arvo;
   line-height: 2em;
   top: 8vh;
 }
 
 .inside {
-  font-family: $font-arvo;
   top: 30vh;
 }
 
 .bottom {
   background: $color-week-three-secondary;
-  font-family: $font-arvo;
-  line-height: 2em;
   bottom: 15vh;
+  line-height: 2em;
 }
 
 .author {
-  font-family: $font-noto-sans;
+  bottom: 1%;
   font-size: 20px;
   line-height: 1em;
-  bottom: 1%;
 }
 
-.three .fonts a:hover {
-  color: $color-week-three-primary;
-}
-
-.fonts .arvo {
-  font-size: 17px;
-}
-
-@media screen and (min-width: 480px) {
-
-  .right {
-    right: -38vh;
-  }
-
-  .left {
-    left: -38vh;
-  }
-}
-
-@media screen and (min-width: 600px) {
-
-  .right {
-    right: -33vh;
-  }
-
-  .left {
-    left: -33vh;
-  }
-}
-
-@media screen and (min-width: 700px) {
-
-  .right {
-    right: -28vh;
-  }
-
-  .left {
-    left: -28vh;
-  }
-
-  .three .fonts {
+.three .fonts {
+  @media #{$breakpoint-700} {
     justify-content: center;
     li {
       margin-left: 15px;
@@ -136,24 +114,10 @@
   }
 }
 
-@media screen and (min-width: 790px) {
-
-  .right {
-    right: -25vh;
-  }
-
-  .left {
-    left: -25vh;
-  }
+.three .fonts a:hover {
+  color: $color-week-three-primary;
 }
 
-@media screen and (min-width: 790px) {
-
-  .right {
-    right: -15vh;
-  }
-
-  .left {
-    left: -15vh;
-  }
+.fonts .arvo {
+  font-size: 17px;
 }

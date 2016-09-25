@@ -62,6 +62,9 @@ h1 {
   font-size: 1.6em;
   padding-top: 30px;
   text-align: center; }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 2.8em; } }
 
 h4 {
   font-family: "Imprima", sans-serif;
@@ -72,6 +75,10 @@ h4 {
 nav {
   height: 35px;
   margin: 10px auto; }
+  @media screen and (min-width: 480px) {
+    nav {
+      display: flex;
+      justify-content: center; } }
 
 nav ul {
   display: flex;
@@ -92,13 +99,26 @@ nav li {
   padding: 10px;
   text-align: center;
   text-transform: lowercase; }
+  @media screen and (min-width: 800px) {
+    nav li {
+      margin: 0 10px; } }
 
 .hidden {
   display: none; }
+  @media screen and (min-width: 480px) {
+    .hidden {
+      display: inline-block; } }
 
 .main-content {
   background-color: #7ECEFD;
   height: 500px; }
+  @media screen and (min-width: 600px) {
+    .main-content {
+      height: 550px; } }
+
+@media screen and (min-width: 480px) {
+  .main-content h2 {
+    padding-top: 50px; } }
 
 .about-title {
   padding-top: 8vh; }
@@ -118,17 +138,34 @@ h2 {
   margin: auto;
   padding-top: 50px;
   text-align: center; }
+  @media screen and (min-width: 480px) {
+    .main-about {
+      line-height: 2.5em; } }
+  @media screen and (min-width: 480px) and (min-width: 800px) {
+    .main-about {
+      letter-spacing: 0.1em;
+      padding-top: 20px;
+      width: 70%; } }
 
 .week-title {
   border-bottom: 2px solid #ff2a00;
   padding-bottom: 10px;
   width: 200px; }
+  @media screen and (min-width: 800px) {
+    .week-title {
+      margin-bottom: 10px;
+      padding-bottom: 10px; } }
 
 h3 {
   font-family: "Cantata One", serif;
   font-size: 14px;
   padding-top: 5px;
   text-align: center; }
+
+@media screen and (min-width: 800px) {
+  .week-date {
+    height: 20px;
+    margin-top: 5px; } }
 
 .week {
   border: 2px solid black;
@@ -146,51 +183,17 @@ h3 {
   margin-top: 4vh;
   vertical-align: top;
   width: 80vw; }
+  @media screen and (min-width: 480px) {
+    .fonts {
+      margin-top: 4vh; } }
   .fonts a {
     color: black;
     text-decoration: none; }
 
 @media screen and (min-width: 480px) {
-  nav {
-    display: flex;
-    justify-content: center; }
-
-  .hidden {
-    display: inline-block; }
-
-  .main-content h2 {
-    padding-top: 50px; }
-
-  .main-about {
-    line-height: 2.5em; }
-
-  .fonts {
-    margin-top: 4vh; }
-
   .fonts li {
     padding: 0 10px 0 15px; } }
-@media screen and (min-width: 600px) {
-  .main-content {
-    height: 550px; } }
-@media screen and (min-width: 790px) {
-  h1 {
-    font-size: 2.8em; }
 
-  nav li {
-    margin: 0 10px; }
-
-  .main-about {
-    letter-spacing: 0.1em;
-    padding-top: 20px;
-    width: 70%; }
-
-  .week-title {
-    margin-bottom: 10px;
-    padding-bottom: 10px; }
-
-  .week-date {
-    height: 20px;
-    margin-top: 5px; } }
 .one {
   background-color: #555f68; }
 
@@ -200,6 +203,23 @@ h3 {
   line-height: 2.2em;
   margin: 10px auto;
   width: 80%; }
+  @media screen and (min-width: 480px) {
+    .week-one-copy {
+      font-size: 1.4em;
+      margin-top: 20px; } }
+  @media screen and (min-width: 480px) and (min-width: 600px) {
+    .week-one-copy {
+      line-height: 3em; } }
+
+  @media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 800px) {
+    .week-one-copy {
+      font-size: 1.8em;
+      letter-spacing: 0.3em;
+      line-height: 2.5em; } }
+
+  @media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 800px) and (min-width: 1000px) {
+    .week-one-copy {
+      width: 70%; } }
 
 .fire {
   animation: skew 1s infinite;
@@ -226,6 +246,16 @@ h3 {
   margin-bottom: 18vh;
   transform: skewY(20deg);
   width: 15%; }
+  @media screen and (min-width: 400px) {
+    .blue {
+      margin-bottom: 27vh; } }
+  @media screen and (min-width: 400px) and (min-width: 480px) {
+    .blue {
+      margin-bottom: 25vh; } }
+
+  @media screen and (min-width: 400px) and (min-width: 480px) and (min-width: 800px) {
+    .blue {
+      margin-top: 40px; } }
 
 .unna {
   font-family: "Unna", serif; }
@@ -240,33 +270,12 @@ h3 {
 .one .fonts a:hover {
   color: #7ECEFD; }
 
-@media screen and (min-width: 400px) {
-  .blue {
-    margin-bottom: 27vh; } }
-@media screen and (min-width: 480px) {
-  .week-one-copy {
-    font-size: 1.4em;
-    margin-top: 20px; }
-
-  .blue {
-    margin-bottom: 25vh; } }
-@media screen and (min-width: 600px) {
-  .week-one-copy {
-    line-height: 3em; } }
-@media screen and (min-width: 790px) {
-  .week-one-copy {
-    font-size: 1.8em;
-    letter-spacing: 0.3em;
-    line-height: 2.5em; }
-
-  .blue {
-    margin-top: 40px; } }
-@media screen and (min-width: 1000px) {
-  .week-one-copy {
-    width: 70%; } }
 .two {
   background-color: #e2b894;
   background-image: radial-gradient(circle, #d0e3f2 20%, #FFF 25%, #e2b894); }
+  @media screen and (min-width: 800px) {
+    .two {
+      background-image: radial-gradient(circle, #d0e3f2 30%, #FFF 40%, #e2b894); } }
 
 .vollkorn {
   font-family: "Vollkorn", serif; }
@@ -276,11 +285,26 @@ h3 {
 
 .two .week-title {
   border-bottom: 2px solid #94BEE2; }
+  @media screen and (min-width: 480px) {
+    .two .week-title {
+      margin-bottom: 5px;
+      padding-top: 10px; } }
+
+@media screen and (min-width: 480px) {
+  .two .date {
+    height: 20px; } }
 
 .week-two-copy {
   margin-top: 20px;
   padding: 20px;
   width: 100%; }
+  @media screen and (min-width: 600px) {
+    .week-two-copy {
+      padding-bottom: 0; } }
+  @media screen and (min-width: 800px) {
+    .week-two-copy {
+      margin-top: 0;
+      padding-top: 0; } }
   .week-two-copy span {
     display: block;
     font-family: "Open Sans", sans-serif;
@@ -291,27 +315,78 @@ b {
   font-family: "Vollkorn", serif;
   font-size: 30px;
   margin: 0 3px; }
+  @media screen and (min-width: 800px) {
+    b {
+      font-size: 40px;
+      font-style: italic; } }
 
 .could {
   margin-bottom: 10px; }
+  @media screen and (min-width: 600px) {
+    .could {
+      padding-left: 60px; } }
+  @media screen and (min-width: 600px) and (min-width: 800px) {
+    .could {
+      font-size: 26px;
+      margin-top: 10px; } }
 
 .because {
   margin-bottom: 20px;
   text-align: right; }
+  @media screen and (min-width: 480px) {
+    .because {
+      padding-right: 30px; } }
+  @media screen and (min-width: 480px) and (min-width: 800px) {
+    .because {
+      font-size: 26px;
+      margin-bottom: 0; } }
 
 .animal {
   text-align: right;
   margin: 20px 0; }
+  @media screen and (min-width: 480px) {
+    .animal {
+      margin-top: 30px;
+      padding-right: 30px;
+      padding-top: 20px; } }
+  @media screen and (min-width: 480px) and (min-width: 800px) {
+    .animal {
+      font-size: 26px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding-right: 60px;
+      padding-top: 0; } }
 
 .hate {
   font-size: 16px;
   margin: 30px 0; }
+  @media screen and (min-width: 480px) {
+    .hate {
+      margin-top: 10px; } }
+  @media screen and (min-width: 480px) and (min-width: 600px) {
+    .hate {
+      padding-left: 40px; } }
+
+  @media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 800px) {
+    .hate {
+      font-size: 26px;
+      margin-bottom: 0; } }
 
 .steve {
   text-align: center; }
+  @media screen and (min-width: 800px) {
+    .steve {
+      font-size: 16px;
+      margin: 10px; } }
 
 .two .fonts {
   font-size: 14px; }
+  @media screen and (min-width: 480px) {
+    .two .fonts {
+      justify-content: center; } }
+  @media screen and (min-width: 480px) and (min-width: 480px) {
+    .two .fonts {
+      margin-top: 0; } }
 
 .two .fonts li {
   padding-left: 10px; }
@@ -327,88 +402,14 @@ b {
   margin: 0 auto;
   max-height: 200px;
   width: auto; }
+  @media screen and (min-width: 480px) {
+    .grumpy-steve-bear {
+      margin-top: 40px; } }
+  @media screen and (min-width: 480px) and (min-width: 800px) {
+    .grumpy-steve-bear {
+      margin-top: 0;
+      max-height: 300px; } }
 
-@media screen and (min-width: 480px) {
-  .two .week-title {
-    margin-bottom: 5px;
-    padding-top: 10px; }
-
-  .two .date {
-    height: 20px; }
-
-  .grumpy-steve-bear {
-    margin-top: 40px; }
-
-  .two .fonts {
-    justify-content: center; }
-
-  .hate {
-    margin-top: 10px; } }
-@media screen and (min-width: 600px) {
-  .week-two-copy {
-    padding-bottom: 0; }
-
-  .could {
-    padding-left: 60px; }
-
-  .hate {
-    padding-left: 40px; }
-
-  .because {
-    padding-right: 30px; }
-
-  .animal {
-    margin-top: 30px;
-    padding-right: 30px;
-    padding-top: 20px; } }
-@media screen and (min-width: 790px) {
-  .two {
-    background-image: radial-gradient(circle, #d0e3f2 30%, #FFF 40%, #e2b894); }
-
-  .week-two-copy {
-    margin-top: 0;
-    padding-top: 0; }
-
-  b {
-    font-size: 40px;
-    font-style: italic; }
-
-  .could,
-  .because,
-  .animal,
-  .hate {
-    font-size: 26px; }
-
-  .steve {
-    font-size: 16px;
-    margin: 10px; }
-
-  .could {
-    margin-top: 10px; }
-
-  .because {
-    margin-bottom: 0; }
-
-  .grumpy-steve-bear {
-    margin-top: 0; }
-
-  .animal,
-  .hate {
-    margin-top: 10px; }
-
-  .animal {
-    margin-bottom: 0;
-    padding-right: 60px;
-    padding-top: 0; }
-
-  .hate {
-    margin-bottom: 0; }
-
-  .grumpy-steve-bear {
-    max-height: 300px; }
-
-  .two .fonts {
-    margin-top: 0; } }
 .arvo {
   font-family: "Arvo", serif; }
 
@@ -440,18 +441,44 @@ b {
   width: 100vh; }
 
 .right {
-  font-family: "Noto Sans", sans-serif;
-  right: -43vh;
   letter-spacing: .15em;
+  right: -43vh;
   top: 40%;
   transform: rotateZ(90deg); }
+  @media screen and (min-width: 480px) {
+    .right {
+      right: -38vh; } }
+  @media screen and (min-width: 480px) and (min-width: 600px) {
+    .right {
+      right: -33vh; } }
+
+  @media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 700px) {
+    .right {
+      right: -28vh; } }
+
+  @media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 700px) and (min-width: 800px) {
+    .right {
+      right: -15vh; } }
 
 .left {
-  font-family: "Noto Sans", sans-serif;
-  letter-spacing: .14em;
-  left: -43vh;
   bottom: 53%;
+  left: -43vh;
+  letter-spacing: .14em;
   transform: rotateZ(-90deg); }
+  @media screen and (min-width: 480px) {
+    .left {
+      left: -38vh; } }
+  @media screen and (min-width: 480px) and (min-width: 600px) {
+    .left {
+      left: -33vh; } }
+
+  @media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 700px) {
+    .left {
+      left: -28vh; } }
+
+  @media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 700px) and (min-width: 800px) {
+    .left {
+      left: -15vh; } }
 
 .author,
 .bottom,
@@ -461,25 +488,28 @@ b {
 
 .top {
   background: #00E4FF;
-  font-family: "Arvo", serif;
   line-height: 2em;
   top: 8vh; }
 
 .inside {
-  font-family: "Arvo", serif;
   top: 30vh; }
 
 .bottom {
   background: #00E4FF;
-  font-family: "Arvo", serif;
-  line-height: 2em;
-  bottom: 15vh; }
+  bottom: 15vh;
+  line-height: 2em; }
 
 .author {
-  font-family: "Noto Sans", sans-serif;
+  bottom: 1%;
   font-size: 20px;
-  line-height: 1em;
-  bottom: 1%; }
+  line-height: 1em; }
+
+@media screen and (min-width: 700px) {
+  .three .fonts {
+    justify-content: center; }
+    .three .fonts li {
+      margin-left: 15px;
+      margin-right: 15px; } }
 
 .three .fonts a:hover {
   color: #FF0088; }
@@ -487,42 +517,6 @@ b {
 .fonts .arvo {
   font-size: 17px; }
 
-@media screen and (min-width: 480px) {
-  .right {
-    right: -38vh; }
-
-  .left {
-    left: -38vh; } }
-@media screen and (min-width: 600px) {
-  .right {
-    right: -33vh; }
-
-  .left {
-    left: -33vh; } }
-@media screen and (min-width: 700px) {
-  .right {
-    right: -28vh; }
-
-  .left {
-    left: -28vh; }
-
-  .three .fonts {
-    justify-content: center; }
-    .three .fonts li {
-      margin-left: 15px;
-      margin-right: 15px; } }
-@media screen and (min-width: 790px) {
-  .right {
-    right: -25vh; }
-
-  .left {
-    left: -25vh; } }
-@media screen and (min-width: 790px) {
-  .right {
-    right: -15vh; }
-
-  .left {
-    left: -15vh; } }
 .abril-fatface {
   font-family: "Abril Fatface", cursive; }
 
@@ -547,8 +541,8 @@ b {
   padding-top: 30px; }
   @media screen and (min-width: 950px) {
     .adams {
-      line-height: 2.5em;
-      font-size: 32px; } }
+      font-size: 32px;
+      line-height: 2.5em; } }
 
 .deadlines {
   margin-left: 10%; }

@@ -19,6 +19,9 @@ h1 {
   font-size: 1.6em;
   padding-top: 30px;
   text-align: center;
+  @media #{$breakpoint-800} {
+    font-size: 2.8em;
+  }
 }
 
 h4 {
@@ -31,6 +34,10 @@ h4 {
 nav {
   height: 35px;
   margin: 10px auto;
+  @media #{$breakpoint-480} {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 nav ul {
@@ -54,10 +61,16 @@ nav li {
   padding: 10px;
   text-align: center;
   text-transform: lowercase;
+  @media #{$breakpoint-800} {
+    margin: 0 10px;
+  }
 }
 
 .hidden {
   display: none;
+  @media #{$breakpoint-480} {
+    display: inline-block;
+  }
 }
 
 // MAIN CONTENT
@@ -65,6 +78,15 @@ nav li {
 .main-content {
   background-color: $color-main-background;
   height: 500px;
+    @media #{$breakpoint-600} {
+    height: 550px;
+  }
+}
+
+.main-content h2 {
+  @media #{$breakpoint-480} {
+    padding-top: 50px;
+  }
 }
 
 .about-title {
@@ -87,6 +109,14 @@ h2 {
   margin: auto;
   padding-top: 50px;
   text-align: center;
+  @media #{$breakpoint-480} {
+    line-height: 2.5em;
+    @media #{$breakpoint-800} {
+      letter-spacing: 0.1em;
+      padding-top: 20px;
+      width: 70%;
+    }
+  }
 }
 
 // GLOBAL WEEK STYLES
@@ -95,6 +125,10 @@ h2 {
   border-bottom: 2px solid $color-week-one-fire;
   padding-bottom: 10px;
   width: 200px;
+  @media #{$breakpoint-800}  {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 h3 {
@@ -102,6 +136,13 @@ h3 {
   font-size: 14px;
   padding-top: 5px;
   text-align: center;
+}
+
+.week-date {
+  @media #{$breakpoint-800} {
+    height: 20px;
+    margin-top: 5px;
+  }
 }
 
 .week {
@@ -121,88 +162,17 @@ h3 {
   margin-top: 4vh;
   vertical-align: top;
   width: 80vw;
+  @media #{$breakpoint-480} {
+    margin-top: 4vh;
+  }
   a {
     color: black;
     text-decoration: none;
   }
 }
 
-@media screen and (min-width: 480px) {
-
-// HEADER
-
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-
-  .hidden {
-    display: inline-block;
-  }
-
-// MAIN CONTENT STYLES
-
-  .main-content h2 {
-    padding-top: 50px;
-  }
-
-  .main-about {
-    line-height: 2.5em;
-  }
-
-// GLOBAL WEEK STYLES
-
-  .fonts {
-    margin-top: 4vh;
-  }
-
-  .fonts li {
+.fonts li {
+  @media #{$breakpoint-480} {
     padding: 0 10px 0 15px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-
-  // MAIN CONTENT STYLES
-
-  .main-content {
-    height: 550px;
-  }
-
-  // GLOBAL WEEK STYLES
-
-
-}
-
-@media screen and (min-width: 790px) {
-
-// HEADER
-
-  h1 {
-    font-size: 2.8em;
-  }
-
-  nav li {
-    margin: 0 10px;
-  }
-
-// MAIN CONTENT
-
-  .main-about {
-    letter-spacing: 0.1em;
-    padding-top: 20px;
-    width: 70%;
-  }
-
-// GLOBAL WEEK STYLES
-
-  .week-title {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-  }
-
-  .week-date {
-    height: 20px;
-    margin-top: 5px;
   }
 }
