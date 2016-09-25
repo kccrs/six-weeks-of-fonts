@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Arvo|Imprima|Lato|Noto+Sans|Open+Sans|Unna|Vollkorn|Abril+Fatface|Cantata+One';
+
 // Font style variables
 $font-main: 'Cantata One', serif;
 $font-secondary: 'Imprima', sans-serif;
@@ -10,6 +12,9 @@ $font-open-sans: 'Open Sans', sans-serif;
 // Week three
 $font-arvo: 'Arvo', serif;
 $font-noto-sans: 'Noto Sans', sans-serif;
+// Week four
+$font-abril-fatface: 'Abril Fatface', cursive;
+
 
 // Color style variables
 
@@ -30,5 +35,9 @@ $color-week-two-complement-grumpy: complement($color-week-two-grumpy);
 $color-week-three-background: darken(#F5F5F5, 10);
 $color-week-three-primary: #FF0088;
 $color-week-three-secondary: #00E4FF;
-
 // Week four
+
+// Media queries
+$breakpoint-480: "screen and (min-width: 480px)";
+$breakpoint-700: "screen and (min-width: 700px)";
+$breakpoint-950: "screen and (min-width: 950px)";

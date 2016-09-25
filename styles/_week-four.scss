@@ -1,0 +1,83 @@
+// WEEK FOUR STYLES
+
+.abril-fatface {
+  font-family: $font-abril-fatface;
+}
+
+.four {
+  .week-title{
+    margin-top: 40px;
+  }
+  .fonts {
+    margin-top: 80px;
+    @media #{$breakpoint-950} {
+      margin-top: 60px;
+    }
+  }
+  .fonts li {
+    margin-left: 5px;
+  }
+}
+
+#gradient {
+  background-color: #000000;
+  width: 100%;
+}
+
+.adams {
+  font-size: 28px;
+  height: 400px;
+  line-height: 2em;
+  padding-top: 30px;
+  @media #{$breakpoint-950} {
+    line-height: 2.5em;
+    font-size: 32px;
+  }
+}
+
+.deadlines {
+  margin-left: 10%;
+  @media #{$breakpoint-700} {
+    margin-left: 15%;
+  }
+}
+
+.like {
+  margin-left: 20%;
+  @media #{$breakpoint-700} {
+    margin-left: 25%;
+  }
+}
+
+.whoosh {
+  letter-spacing: .4em;
+  margin-left: 30%;
+  @media #{$breakpoint-700} {
+    margin-left: 35%;
+  }
+}
+
+.sound {
+  margin-left: 40%;
+  @media #{$breakpoint-700} {
+    margin-left: 45%;
+  }
+}
+
+.fly {
+  margin-left: 50%;
+  @media #{$breakpoint-480} {
+    margin-left: 60%;
+    @media #{$breakpoint-700} {
+      margin-left: 65%;
+    }
+  }
+}
+
+.douglas {
+  font-size: 26px;
+  text-align: center;
+  @media #{$breakpoint-950} {
+    padding-top: 30px;
+  }
+}

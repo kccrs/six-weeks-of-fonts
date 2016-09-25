@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import "https://fonts.googleapis.com/css?family=Arvo|Imprima|Lato|Noto+Sans|Open+Sans|Unna|Vollkorn|Abril+Fatface|Cantata+One";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -522,5 +523,72 @@ b {
 
   .left {
     left: -15vh; } }
+.abril-fatface {
+  font-family: "Abril Fatface", cursive; }
+
+.four .week-title {
+  margin-top: 40px; }
+.four .fonts {
+  margin-top: 80px; }
+  @media screen and (min-width: 950px) {
+    .four .fonts {
+      margin-top: 60px; } }
+.four .fonts li {
+  margin-left: 5px; }
+
+#gradient {
+  background-color: #000000;
+  width: 100%; }
+
+.adams {
+  font-size: 28px;
+  height: 400px;
+  line-height: 2em;
+  padding-top: 30px; }
+  @media screen and (min-width: 950px) {
+    .adams {
+      line-height: 2.5em;
+      font-size: 32px; } }
+
+.deadlines {
+  margin-left: 10%; }
+  @media screen and (min-width: 700px) {
+    .deadlines {
+      margin-left: 15%; } }
+
+.like {
+  margin-left: 20%; }
+  @media screen and (min-width: 700px) {
+    .like {
+      margin-left: 25%; } }
+
+.whoosh {
+  letter-spacing: .4em;
+  margin-left: 30%; }
+  @media screen and (min-width: 700px) {
+    .whoosh {
+      margin-left: 35%; } }
+
+.sound {
+  margin-left: 40%; }
+  @media screen and (min-width: 700px) {
+    .sound {
+      margin-left: 45%; } }
+
+.fly {
+  margin-left: 50%; }
+  @media screen and (min-width: 480px) {
+    .fly {
+      margin-left: 60%; } }
+  @media screen and (min-width: 480px) and (min-width: 700px) {
+    .fly {
+      margin-left: 65%; } }
+
+.douglas {
+  font-size: 26px;
+  text-align: center; }
+  @media screen and (min-width: 950px) {
+    .douglas {
+      padding-top: 30px; } }
 
 /*# sourceMappingURL=styles.css.map */
